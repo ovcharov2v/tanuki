@@ -69,8 +69,8 @@
 		"@babel/plugin-transform-runtime": "7.14.5",
 		"@babel/runtime": "7.14.8",
 		"core-js": "3.15.2",
-		"swiper": "9.4.1",
-		"the-new-css-reset": "1.9.0"
+		"reset-css": "5.0.2",
+		"swiper": "9.4.1"
 	},
 	"lint-staged": {
 		"*.(js|jsx|ts|tsx)": "eslint --color --fix",

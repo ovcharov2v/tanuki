@@ -1,0 +1,39 @@
+.section-trust {
+	padding-top: 126px;
+	padding-bottom: 60px;
+
+	&__grid {
+		display: grid;
+		grid-template: auto / repeat(4, 1fr);
+		grid-column-gap: 40px;
+	}
+
+	&__elem {
+		position: relative;
+		cursor: pointer;
+	}
+
+	&__logo {
+		width: 100%;
+		transition: opacity .4s linear;
+
+		&--gray {
+			opacity: 1;
+
+			.section-trust__elem:hover & {
+				opacity: 0;
+			}
+		}
+
+		&--color {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+
+			.section-trust__elem:hover & {
+				opacity: 1;
+			}
+		}
+	}
+}

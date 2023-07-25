@@ -1,0 +1,30 @@
+.section-hero {
+	padding-top: 10px;
+	padding-bottom: 60px;
+
+	&__title-box {
+		display: flex;
+		margin-bottom: 16px;
+	}
+
+	&__title {
+	}
+
+	&__logo-list {
+		flex-shrink: 0;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__logo {
+		display: block;
+		width: 118px;
+		height: 118px;
+		border-radius: 50%;
+		border: 6px solid $color-white;
+
+		&:not(:last-child) {
+			margin-right: -38px;
+		}
+	}
+}

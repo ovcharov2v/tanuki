@@ -1,0 +1,31 @@
+.section-rewards {
+	padding-top: 70px;
+	padding-bottom: 80px;
+	background: linear-gradient(90deg, #0137FF 0%, #02A9FF 100%);
+	color: $color-white;
+
+	&__title {
+		margin-bottom: 70px;
+		opacity: .7;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template: auto / repeat(3, 1fr);
+		grid-column-gap: 40px;
+	}
+
+	&__year {
+		margin-bottom: 28px;
+		font-size: 44px;
+		line-height: 1;
+		font-weight: 800;
+		letter-spacing: .03em;
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: .03em;
+	}
+}

@@ -1,0 +1,19 @@
+.section-job {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	&__title {}
+
+	&__text {
+	}
+
+	&__link {
+		color: #0260FF;
+		text-decoration: underline;
+		transition: color $transition-default;
+
+		&:hover {
+			color: $color-red;
+		}
+	}
+}

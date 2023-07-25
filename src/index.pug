@@ -7,3 +7,144 @@ append vars
 	- title = "Main page"
 
 block content
+	// Section Hero
+	section.section-hero.container
+		.section-hero__title-box
+			h1.heading1.section-hero__title Выводим ресторанный бизнес в онлайн
+			.section-hero__logo-list
+				img.section-hero__logo(src="images/client-logo1.svg", alt)
+				img.section-hero__logo(src="images/client-logo2.svg", alt)
+				img.section-hero__logo(src="images/client-logo3.svg", alt)
+				img.section-hero__logo(src="images/client-logo4.svg", alt)
+		button.button Связаться с нами
+
+	// Section Steps
+	section.section-steps.container
+		.section-steps__grid
+			// Elem
+			figure.section-steps__elem
+				+picture("img1", "png")(class="section-steps__elem-img")
+				figcaption.section-steps__elem-text-box
+					h3.section-steps__elem-title Анализ
+					p.section-steps__elem-text Проводим продуктовую, системную и бизнес аналитику. Улучшаем продукты для достижения целей компаний
+			// Elem
+			figure.section-steps__elem
+				+picture("img2", "png")(class="section-steps__elem-img")
+				figcaption.section-steps__elem-text-box
+					h3.section-steps__elem-title Разработка
+					p.section-steps__elem-text Полный цикл разработки ПО: создание, тестирование, выкладка и сопровождение
+			// Elem
+			figure.section-steps__elem
+				+picture("img3", "png")(class="section-steps__elem-img")
+				figcaption.section-steps__elem-text-box
+					h3.section-steps__elem-title Продуктовый подход
+					p.section-steps__elem-text Следим за метриками и собираем обратную связь клиентов и бизнеса
+
+	// Section Product
+	section.section-product.container
+		h2.heading2.section-product__title Наш ключевой продукт
+		+picture("logo-raiden")(class="section-product__logo")
+		.section-product__grid
+			.section-product__col
+				p.text-gray Система позволяет подключать как небольшие бренды с ограниченной зоной доставки, так и крупные сети ресторанов и dark kitchen. Продукт может быть масштабирован под задачи онлайн-ритейла и других сфер бизнеса. Решение разворачивается в облачной инфраструктуре и представляет собой набор сервисов, объединённых в целостный продукт. Подробную информацию о системе и правилах ее эксплуатации вы можете получить, связавшись с нами. Стоимость ПО определяется индивидуально на основании используемых модулей и объеме данных.
+			ul.section-product__col
+				li.section-product__list-elem
+					+picture("marker1", "png")(class="section-product__marker")
+					p.section-product__text Прием, обработка и отслеживание заказов
+				li.section-product__list-elem
+					+picture("marker2", "png")(class="section-product__marker")
+					p.section-product__text Мониторинг технических показателей
+				li.section-product__list-elem
+					+picture("marker3", "png")(class="section-product__marker")
+					p.section-product__text Интеграции: программы лояльности, агрегаторы, платежные, коммуникационные сервисы и тд.
+				li.section-product__list-elem
+					+picture("marker4", "png")(class="section-product__marker")
+					p.section-product__text Прием и передача данных в каналы продаж: сайты, приложения, чат боты
+		h3.section-product__schema-title Архитектура решения RaidenOMS
+		p.section-product__schema-text.text-gray В нашем решении мы используем только свободнораспространяемые компоненты.Core - php, message broker - rabbit MQ, СУБД - postgreSQL
+		img.section-product__schema.section-product__schema--desktop(src="images/schema-desktop.svg", alt)
+		img.section-product__schema.section-product__schema--mobile(src="images/schema-mobile.svg", alt)
+
+	// Section About
+	section.section-about.container
+		h2.heading2 О нас
+		.section-about__text-box
+			.section-about__grid
+				.section-about__col
+					p.section-about__text-black Команда TanukiTech создает комплексные решения для автоматизации ресторанного бизнеса.
+			.section-about__grid
+				.section-about__col
+					p.section-about__text.text-gray Продуктовая команда проекта — более 15 сотрудников.
+						br
+						|Инженерная команда — более 30 сотрудников.
+					p.section-about__text.text-gray Команда TanukiTech решает любые смежные задачи — от стабильно работающего сайта до многоуровневых приложений со сложной инфраструктурой.
+				.section-about__col
+					p.section-about__text.text-gray В 2010 году мы одними из первых на рынке выпустили полнофункциональное мобильное приложение на iOS для бренда японских ресторанов «Тануки», в 2011 году первыми в своей категории выпустили приложение для Android. В настоящее время мы эксперты в FoodTech-сфере, работаем с разными ресторанными концепциями и внедряем системы управления заказами уже в нескольких странах мира.
+		.swiper.section-about__slider
+			.swiper-wrapper
+				// Slide
+				.swiper-slide.section-about__slide
+					+picture("slide1")(class="section-about__slide-img")
+				// Slide
+				.swiper-slide.section-about__slide
+					+picture("slide2")(class="section-about__slide-img")
+				// Slide
+				.swiper-slide.section-about__slide
+					+picture("slide3")(class="section-about__slide-img")
+				// Slide
+				.swiper-slide.section-about__slide
+					+picture("slide4")(class="section-about__slide-img")
+
+	// Section Rewards
+	section.section-rewards
+		.container
+			h2.heading2.section-rewards__title Награды
+			.section-rewards__grid
+				// Elem
+				.section-rewards__elem
+					h3.section-rewards__year 2018
+					p.section-rewards__text Премия «Большой оборот» в категории «Инновация» Гран-при премии «Золотое приложение 2018» в номинации «Еда и напитки»
+				// Elem
+				.section-rewards__elem
+					h3.section-rewards__year 2019
+					p.section-rewards__text Первое место и Гран-при премии «Золотое приложение» в категории «Еда и напитки»
+				// Elem
+				.section-rewards__elem
+					h3.section-rewards__year 2021
+					p.section-rewards__text Ecom Awards — специальный приз в номинации «Вдохновение года»
+
+	// Section Trust
+	section.section-trust.container
+		h2.heading2 Нам доверяют
+		.section-trust__grid
+			// Elem
+			.section-trust__elem
+				img.section-trust__logo.section-trust__logo--gray(src="images/trust-logo1-gray.svg", alt)
+				img.section-trust__logo.section-trust__logo--color(src="images/trust-logo1-color.svg", alt)
+			// Elem
+			.section-trust__elem
+				img.section-trust__logo.section-trust__logo--gray(src="images/trust-logo2-gray.svg", alt)
+				img.section-trust__logo.section-trust__logo--color(src="images/trust-logo2-color.svg", alt)
+			// Elem
+			.section-trust__elem
+				img.section-trust__logo.section-trust__logo--gray(src="images/trust-logo3-gray.svg", alt)
+				img.section-trust__logo.section-trust__logo--color(src="images/trust-logo3-color.svg", alt)
+			// Elem
+			.section-trust__elem
+				img.section-trust__logo.section-trust__logo--gray(src="images/trust-logo4-gray.svg", alt)
+				img.section-trust__logo.section-trust__logo--color(src="images/trust-logo4-color.svg", alt)
+
+	// Section Job
+	section.section-job.container
+		h2.heading2.section-job__title Вакансии
+		p.section-job__text.text-gray2 Сейчас активных вакансий нет, но вы можете
+			|
+			|
+			a.section-job__link(href="mailto:#") прислать свое резюме
+			|. Возможно, мы найдем место в команде.
+
+	// Section Contacts
+	section.section-contacts.container
+		h2.heading2 Связаться с нами
+		address.section-contacts__text.text-gray2 123112, Москва,Пресненская наб., дом 12, этаж 22, помещение 2208
+		a.button(href="#") Написать письмо

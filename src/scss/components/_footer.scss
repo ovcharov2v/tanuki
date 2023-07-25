@@ -1,9 +1,27 @@
 .footer {
-	padding-top: 54px;
-	padding-bottom: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	@include tablet {
+		padding-top: 34px;
+		padding-bottom: 34px;
+	}
+
+	@include desktop {
+		padding-top: 54px;
+		padding-bottom: 60px;
+	}
 
 	&__text {
 		font-size: 16px;
 		color: $color-text-gray;
+
+		@include tablet {
+			font-size: 14px;
+		}
+
+		@include desktop {
+			font-size: 16px;
+		}
 	}
 }

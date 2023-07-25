@@ -1,10 +1,35 @@
 .section-job {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 26px;
+	padding-bottom: 36px;
 
-	&__title {}
+	@include tablet {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	@include desktop {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	&__title {
+	}
 
 	&__text {
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 500;
+		color: $color-text-gray;
+
+		@include tablet {
+			font-size: 22px;
+			line-height: 32px;
+			letter-spacing: .04em;
+		}
+		@include desktop {
+			font-size: 28px;
+			line-height: 32px;
+		}
 	}
 
 	&__link {

@@ -1,11 +1,31 @@
 .section-trust {
-	padding-top: 126px;
-	padding-bottom: 60px;
+	padding-top: 72px;
+	padding-bottom: 20px;
+
+	@include tablet {
+		padding-top: 85px;
+		padding-bottom: 40px;
+	}
+
+	@include desktop {
+		padding-top: 126px;
+		padding-bottom: 60px;
+	}
 
 	&__grid {
 		display: grid;
-		grid-template: auto / repeat(4, 1fr);
-		grid-column-gap: 40px;
+		grid-template: auto / repeat(2, 1fr);
+
+		@include tablet-desktop {
+			grid-template: auto / repeat(4, 1fr);}
+
+		@include tablet {
+			grid-column-gap: 20px;
+		}
+
+		@include desktop {
+			grid-column-gap: 40px;
+		}
 	}
 
 	&__elem {

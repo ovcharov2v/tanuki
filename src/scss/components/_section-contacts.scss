@@ -1,8 +1,35 @@
 .section-contacts {
-	padding-top: 68px;
-	padding-bottom: 60px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+
+	@include tablet {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	@include desktop {
+		padding-top: 68px;
+		padding-bottom: 60px;
+	}
 
 	&__text {
-		margin-bottom: 36px;
+		margin-bottom: 22px;
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 500;
+		color: $color-text-gray;
+
+		@include tablet {
+			margin-bottom: 34px;
+			font-size: 22px;
+			line-height: 32px;
+			letter-spacing: .04em;
+		}
+
+		@include desktop {
+			margin-bottom: 36px;
+			font-size: 28px;
+			line-height: 32px;
+		}
 	}
 }

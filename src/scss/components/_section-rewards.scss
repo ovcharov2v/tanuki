@@ -1,31 +1,83 @@
 .section-rewards {
-	padding-top: 70px;
-	padding-bottom: 80px;
+	padding-top: 41px;
+	padding-bottom: 48px;
 	background: linear-gradient(90deg, #0137FF 0%, #02A9FF 100%);
 	color: $color-white;
 
+	@include tablet {
+		padding-top: 45px;
+		padding-bottom:56px;
+	}
+
+	@include desktop {
+		padding-top: 70px;
+		padding-bottom: 80px;
+	}
+
 	&__title {
-		margin-bottom: 70px;
+		margin-bottom: 35px;
 		opacity: .7;
+
+		@include tablet {
+			margin-bottom: 40px;
+			letter-spacing: .03em;
+		}
+
+		@include desktop {
+			margin-bottom: 70px;
+		}
 	}
 
 	&__grid {
 		display: grid;
-		grid-template: auto / repeat(3, 1fr);
-		grid-column-gap: 40px;
+		grid-row-gap: 21px;
+
+		@include tablet-desktop {
+			grid-template: auto / repeat(3, 1fr);
+		}
+
+		@include tablet {
+			grid-column-gap: 20px;
+		}
+
+		@include desktop {
+			grid-column-gap: 40px;
+		}
 	}
 
 	&__year {
-		margin-bottom: 28px;
-		font-size: 44px;
+		margin-bottom: 22px;
+		font-size: 24px;
 		line-height: 1;
 		font-weight: 800;
 		letter-spacing: .03em;
+
+		@include tablet {
+			margin-bottom: 28px;
+			font-size: 38px;
+			letter-spacing: .06em;
+		}
+
+		@include desktop {
+			margin-bottom: 28px;
+			font-size: 44px;
+			letter-spacing: .03em;
+		}
 	}
 
 	&__text {
-		font-size: 24px;
-		line-height: 28px;
+		font-size: 16px;
+		line-height: 18px;
 		letter-spacing: .03em;
+
+		@include tablet {
+			font-size: 22px;
+			line-height: 26px;
+		}
+
+		@include desktop {
+			font-size: 24px;
+			line-height: 28px;
+		}
 	}
 }

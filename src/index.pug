@@ -4,7 +4,8 @@ prepend vars
 	//-
 
 append vars
-	- title = "Main page"
+	- title = "TanukiTech"
+	- meta.description = "TanukiTech"
 
 block content
 	// Section Hero
@@ -16,32 +17,35 @@ block content
 				img.section-hero__logo(src="images/client-logo2.svg", alt)
 				img.section-hero__logo(src="images/client-logo3.svg", alt)
 				img.section-hero__logo(src="images/client-logo4.svg", alt)
-		button.button Связаться с нами
+		a.button(href="#") Связаться с нами
 
 	// Section Steps
 	section.section-steps.container
 		.section-steps__grid
 			// Elem
 			figure.section-steps__elem
-				+picture("img1", "png")(class="section-steps__elem-img")
+				.section-steps__elem-img-box
+					+picture("img1", "png")(class="section-steps__elem-img")
 				figcaption.section-steps__elem-text-box
 					h3.section-steps__elem-title Анализ
 					p.section-steps__elem-text Проводим продуктовую, системную и бизнес аналитику. Улучшаем продукты для достижения целей компаний
 			// Elem
 			figure.section-steps__elem
-				+picture("img2", "png")(class="section-steps__elem-img")
+				.section-steps__elem-img-box
+					+picture("img2", "png")(class="section-steps__elem-img")
 				figcaption.section-steps__elem-text-box
 					h3.section-steps__elem-title Разработка
 					p.section-steps__elem-text Полный цикл разработки ПО: создание, тестирование, выкладка и сопровождение
 			// Elem
 			figure.section-steps__elem
-				+picture("img3", "png")(class="section-steps__elem-img")
+				.section-steps__elem-img-box
+					+picture("img3", "png")(class="section-steps__elem-img")
 				figcaption.section-steps__elem-text-box
 					h3.section-steps__elem-title Продуктовый подход
 					p.section-steps__elem-text Следим за метриками и собираем обратную связь клиентов и бизнеса
 
 	// Section Product
-	section.section-product.container
+	section#product.section-product.container
 		h2.heading2.section-product__title Наш ключевой продукт
 		+picture("logo-raiden")(class="section-product__logo")
 		.section-product__grid
@@ -66,7 +70,7 @@ block content
 		img.section-product__schema.section-product__schema--mobile(src="images/schema-mobile.svg", alt)
 
 	// Section About
-	section.section-about.container
+	section#about.section-about.container
 		h2.heading2 О нас
 		.section-about__text-box
 			.section-about__grid
@@ -96,7 +100,7 @@ block content
 					+picture("slide4")(class="section-about__slide-img")
 
 	// Section Rewards
-	section.section-rewards
+	section#rewards.section-rewards
 		.container
 			h2.heading2.section-rewards__title Награды
 			.section-rewards__grid
@@ -114,7 +118,7 @@ block content
 					p.section-rewards__text Ecom Awards — специальный приз в номинации «Вдохновение года»
 
 	// Section Trust
-	section.section-trust.container
+	section#trust.section-trust.container
 		h2.heading2 Нам доверяют
 		.section-trust__grid
 			// Elem
@@ -135,16 +139,16 @@ block content
 				img.section-trust__logo.section-trust__logo--color(src="images/trust-logo4-color.svg", alt)
 
 	// Section Job
-	section.section-job.container
+	section#job.section-job.container
 		h2.heading2.section-job__title Вакансии
-		p.section-job__text.text-gray2 Сейчас активных вакансий нет, но вы можете
+		p.section-job__text Сейчас активных вакансий нет, но вы можете
 			|
 			|
-			a.section-job__link(href="mailto:#") прислать свое резюме
+			a.section-job__link(href="#") прислать свое резюме
 			|. Возможно, мы найдем место в команде.
 
 	// Section Contacts
-	section.section-contacts.container
+	section#contacts.section-contacts.container
 		h2.heading2 Связаться с нами
-		address.section-contacts__text.text-gray2 123112, Москва,Пресненская наб., дом 12, этаж 22, помещение 2208
+		address.section-contacts__text 123112, Москва,Пресненская наб., дом 12, этаж 22, помещение 2208
 		a.button(href="#") Написать письмо

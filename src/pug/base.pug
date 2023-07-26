@@ -276,9 +276,6 @@ html(class=html.classList)&attributes(html.attrs)
 			if link.maskIcon.href !== null
 				link(rel="mask-icon" href!=link.maskIcon.href color=link.maskIcon.color)
 		block styles
-			link(rel='preconnect', href='https://fonts.googleapis.com')
-			link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
-			link(href='https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap', rel='stylesheet')
 			link(rel="stylesheet" href!=`${baseDir}css/main.css?v=${Date.now()}`)
 		block head-end
 	body(class=body.classList)&attributes(body.attrs)
